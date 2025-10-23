@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChildGuard — Settings</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="logo-placeholder">[Your Logo]</div>
+    <h1 class="app-title">ChildGuard</h1>
+    <nav class="nav-bar">
+      <a href="dashboard.html" class="nav-link">Home</a>
+      <a href="add_child.html" class="nav-link">Add Child</a>
+      <a href="settings.html" class="nav-link active">Settings</a>
+      <button class="btn logout-btn" onclick="logoutParent()">Logout</button>
+    </nav>
+  </header>
+
+  <main class="form-container card fade-in">
+    <h2>Profile</h2>
+    <p><strong>Email:</strong> <span id="profileEmail">—</span></p>
+    <input id="profileName" type="text" placeholder="Your name" />
+    <div class="password-wrapper">
+      <input id="profilePassword" type="password" placeholder="New password" />
+      <button type="button" id="toggleProfilePassword" class="eye-btn">👁️</button>
+    </div>
+    <button id="updateProfileBtn" class="btn primary btn-block">Update Profile</button>
+    <hr />
+    <button class="btn logout-btn" onclick="logoutParent()">Logout</button>
+  </main>
+
+  <footer class="app-footer">© 2025 ChildGuard</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/auth.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ChildGuard — Add Child</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/forms.css" />
+  <link rel="stylesheet" href="css/animations.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="logo-placeholder">[Your Logo]</div>
+    <h1 class="app-title">ChildGuard</h1>
+    <nav class="nav-bar">
+      <a href="dashboard.html" class="nav-link">Home</a>
+      <a href="add_child.html" class="nav-link active">Add Child</a>
+      <a href="settings.html" class="nav-link">Settings</a>
+      <button class="btn logout-btn" onclick="logoutParent()">Logout</button>
+    </nav>
+  </header>
+
+  <main class="form-container card fade-in">
+    <form id="addChildForm">
+      <h2>Add Child Profile</h2>
+      <input id="childName" type="text" placeholder="Child name" required />
+      <input id="deviceId" type="text" placeholder="Device ID (optional)" />
+      <button type="submit" class="btn primary btn-block">Add Child</button>
+    </form>
+  </main>
+
+  <footer class="app-footer">© 2025 ChildGuard</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+  <script src="js/supabaseClient.js"></script>
+  <script src="js/childManager.js"></script>
+  <script src="js/ui.js"></script>
+</body>
+</html>
